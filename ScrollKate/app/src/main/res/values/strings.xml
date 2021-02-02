@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">ScrollKate</string>
+    <string name="one">Apple</string>
+    <string name="two">Android</string>
+    <string name="three">Google</string>
+</resources>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#062330"
+    android:paddingStart="20dp"
+    android:paddingLeft="20dp"
+    android:paddingTop="40dp"
+    android:paddingEnd="50dp"
+    android:paddingRight="20dp"
+    android:paddingBottom="90dp"
+    android:scrollbarStyle="insideInset"
+    app:layout_constraintHorizontal_chainStyle="spread"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="205dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="200dp"
+        android:background="#FF5722"
+        android:fontFamily="@font/allerta"
+        android:includeFontPadding="true"
+        android:text="Message"
+        android:textColor="#DEE8EA"
+        android:textSize="45dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.609" />
+
+    <Button
+        android:id="@+id/btn_g"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="79dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="94dp"
+        android:layout_marginBottom="130dp"
+        android:text="Green"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn_b"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv"
+        app:layout_constraintVertical_bias="0.157" />
+
+    <Button
+        android:id="@+id/btn_r"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="131dp"
+        android:layout_marginEnd="124dp"
+        android:layout_marginBottom="60dp"
+        android:text="Leave"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv" />
+
+    <Button
+        android:id="@+id/btn_b"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="42dp"
+        android:layout_marginBottom="24dp"
+        android:text="Blue"
+        app:layout_constraintBottom_toTopOf="@+id/btn_r"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_g"
+        app:layout_constraintTop_toBottomOf="@+id/tv"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btn_v"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="260dp"
+        android:layout_marginBottom="32dp"
+        android:text="Vanish"
+        app:layout_constraintBottom_toTopOf="@+id/btn_r"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.121"
+        app:layout_constraintStart_toEndOf="@+id/btn_g"
+        app:layout_constraintTop_toBottomOf="@+id/tv"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
